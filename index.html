@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h2>Caculator</h2>
+ <input type="number" name="so" id="so-a"> <input type="number" id="so-b">
+<div>
+    <button type="submit" onclick="Addition()" id="Add">Addition(+)</button>
+    <button type="submit" onclick="Subtraction()" id="Sub">Subtraction(-)</button>
+    <button type="submit" onclick="Multiplication()" id="Mul">Multiplication(X)</button>
+    <button type="submit" onclick="Division()" id="Divi">Division(/)</button>
+</div>
+ <br>
+<h3 id="Result">Result Division</h3>
+ <script>
+function Addition(){
+    let a = parseInt(document.getElementById("so-a").value);
+    let b = parseInt(document.getElementById("so-b").value);
+    let c = a + b;
+    document.getElementById("Result").innerHTML = "Result Division:" + c;
+}
+function Subtraction(){
+    let a = parseInt(document.getElementById("so-a").value);
+    let b = parseInt(document.getElementById("so-b").value);
+    let c = a - b;
+    document.getElementById("Result").innerHTML = "Result Division:" + c;
+}
+function Multiplication(){
+    let a = parseInt(document.getElementById("so-a").value);
+    let b = parseInt(document.getElementById("so-b").value);
+    let c = a * b;
+    document.getElementById("Result").innerHTML = "Result Division:" + c;
+}
+function Division(){
+    let a = parseInt(document.getElementById("so-a").value);
+    let b = parseInt(document.getElementById("so-b").value);
+    let c = a / b;
+    document.getElementById("Result").innerHTML = "Result Division:" + c;
+}
+ </script>
+</body>
+</html>
